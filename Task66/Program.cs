@@ -14,10 +14,7 @@ string Function(int M, int N)
 {
     sum += M;
     if (M == N) return sum.ToString();
-    else
-    {
-        return (Function(M + 1, N));
-    }
+    else return (Function(M + 1, N));
 }
 if (M < N) Console.Write($"Sum is: {Function(M, N)}");
 else Console.WriteLine("Wrong input! ");

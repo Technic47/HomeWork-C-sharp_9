@@ -12,10 +12,7 @@ int.TryParse(Console.ReadLine(), out N);
 string Function(int M, int N)
 {
     if (M == N) return M.ToString();
-    else
-    {
-        return (M + " " + Function(M + 1, N));
-    }
+    else return (M + " " + Function(M + 1, N));
 }
 if (M < N) Console.Write(Function(M, N));
 else Console.WriteLine("Wrong input! ");
