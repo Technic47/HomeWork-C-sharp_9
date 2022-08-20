@@ -9,7 +9,7 @@ int N = 0;
 int.TryParse(Console.ReadLine(), out M);
 int.TryParse(Console.ReadLine(), out N);
 
-string Function(int M, int N)
+string Function(int M, int N) // переделать
 {
     if (M == N) return M.ToString();
     else return (M + " " + Function(M + 1, N));
